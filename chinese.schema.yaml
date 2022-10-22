@@ -8,12 +8,12 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中文, 英文 ]
+    states: [ 中文, ABC ]
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: simplification
     reset: 1
-    states: [ 漢字, 汉字 ]
+    states: [ 繁體, 简体 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
 
@@ -119,7 +119,7 @@ reverse_lookup:
   enable_completion: true
   prefix: "`"
   suffix: "'"
-  tips: 〔筆畫〕
+  tips: 〔笔画〕
   preedit_format:
     - xlit/hspnz/一丨丿丶乙/
   comment_format:
